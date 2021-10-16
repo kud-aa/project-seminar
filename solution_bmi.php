@@ -21,4 +21,3 @@ function getBMi(int $height, float $weight)
 }
 
 ?>
-
