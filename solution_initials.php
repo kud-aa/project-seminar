@@ -8,6 +8,6 @@ function getInitials(string $FIO)
     return $FIO;
 }
 
-echo getInitials("ГЕи Нигеры из далекого космоса");
 
+echo "2" + "2s";
 ?>
