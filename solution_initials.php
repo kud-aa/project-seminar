@@ -8,6 +8,6 @@ function getInitials(string $FIO)
     return $FIO;
 }
 
+echo
 
-echo "2" + "2s";
 ?>
