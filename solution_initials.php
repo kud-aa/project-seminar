@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 function getInitials(string $FIO)
 {
+    $FIO =  mb_convert_case($FIO, MB_CASE_TITLE, "UTF-8");
+    $output = [];
     for ($i = 0; $i < mb_strlen($FIO, 'UTF-8'); $i++) {
         $array[] = mb_substr($FIO, $i, 1, 'UTF-8');
     }
@@ -14,30 +16,38 @@ function getInitials(string $FIO)
             break;
         }
 
-        echo $array[$i];
+        array_push($output, $array[$i]);
     }
 
-    echo " ";
+    array_push($output, " ");
 
-    $n = 0;
     for ($i = 0; $i < count($array); $i++){
         if ($array[$i] == " "){ 
             $n = $i;
-            echo $array[$n+1];
-            echo ".";
+            array_push($output, $array[$n+1]);
+            array_push($output, ".");
         }
         if ($array[$i] == "-"){
             $n = $i;
-            echo $array[$i];
-            echo $array[$n+1];
-            echo ".";
+            array_push($output, $array[$i]);
+            array_push($output, $array[$n+1]);
+            array_push($output, ".");
         }
 
     }
+    $string_output = implode('',$output);
+    return $string_output;
 
 }
 
-getInitials("мамин-сибиряк дмитрий наркисович");
+
+echo getInitials("мамин-сибиряк дмитрий наркисович");
 echo "\n";
-getInitials("Смирнов Теодор-Арсений");
+echo getInitials("Петров иван");
+echo "\n";
+echo getInitials("Маркес Габриэль Хосе Гарсиа");
+echo "\n";
+echo getInitials("Смирнов Теодор-Арсений");
+echo "\n";
+
 ?>
