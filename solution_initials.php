@@ -4,6 +4,14 @@ declare(strict_types = 1);
 
 function getInitials(string $FIO)
 {
+    // remove spaces before and after text
+    $FIO = trim($FIO);
+
+    // check if FIO is empty
+    if (empty($FIO)){
+        return null;
+    }
+
     $FIO =  mb_convert_case($FIO, MB_CASE_TITLE, "UTF-8");  // convert to utf8
 
     // convert from string to array
