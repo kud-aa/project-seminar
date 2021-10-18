@@ -44,14 +44,4 @@ function getInitials(string $FIO)
 
 }
 
-
-echo getInitials("мамин-сибиряк дмитрий наркисович");
-echo "\n";
-echo getInitials("Петров иван");
-echo "\n";
-echo getInitials("Маркес Габриэль Хосе Гарсиа");
-echo "\n";
-echo getInitials("Смирнов Теодор-Арсений");
-echo "\n";
-
 ?>
