@@ -20,7 +20,7 @@ function getInitials(string $FIO)
         $array[] = mb_substr($FIO, $i, 1, 'UTF-8');
     }
 
-    // add to output array all cahrs until meets first space 
+    // add to output array all chars until meets first space 
     for ($i = 0; $i < count($array); $i++){
         if ($array[$i] == " "){
             \array_splice($array, 0, $i);
