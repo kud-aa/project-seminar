@@ -55,6 +55,8 @@ echo getSumNK([1,3,4], 1, 3);
 echo "\n";
 echo getSumNK([1,2,3,4,5,6,7], 4, 3);
 echo "\n";
+echo getSumNK([1,2,3], 1.0, 2);
+echo "\n";
 echo getSumNK([1,2,3.0], 3, 1);
 echo "\n";
 echo getSumNK([1,2,3], 3, 3);
