@@ -20,6 +20,15 @@ function getSumNK($input, int $N, int $K): int
         die();
     }
 
+    for ($check_index = 0; $check_index < count($input); $check_index++)
+    {
+        if(!is_int($input[$check_index]))
+        {
+            return -1;
+            die();
+        }
+    } 
+
     if ($K == 0)
     {
         $K = 1;
@@ -32,6 +41,7 @@ function getSumNK($input, int $N, int $K): int
     {
         $last_index = $N + $K - 1;
     }
+
     $i = $K - 1;
     $sum = 0;
     for ($i; $i < $last_index; $i++)
@@ -68,3 +78,5 @@ echo "\n";
 echo getSumNK([1,2,3,4,5,6], 0, 2);
 echo "\n";
 echo getSumNK([1,2,3,4,5,6], 0, 0);
+echo "\n";
+echo getSumNK([1,2,3,4,1.0,2], 3, 1);
