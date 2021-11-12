@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-function getSumNK($input, int $N, int $K): int
+function getSumNK($input, int $N, int $K): ?int
 {
     if ($N < 0 || $K < 0)
     {
@@ -20,14 +20,11 @@ function getSumNK($input, int $N, int $K): int
         die();
     }
 
-    for ($check_index = 0; $check_index < count($input); $check_index++)
+    if (in_array(0, array_map('is_int', $input)))
     {
-        if(!is_int($input[$check_index]))
-        {
-            return -1;
-            die();
-        }
-    } 
+        return -1;
+        die();
+    }
 
     if ($K == 0)
     {
@@ -35,28 +32,11 @@ function getSumNK($input, int $N, int $K): int
     }
     if ($N == 0)
     {
-        $last_index = count($input);
+        $K = 1;
+        $N = count($input);
     }
-    else
-    {
-        $last_index = $N + $K - 1;
-    }
-
     $i = $K - 1;
-    $sum = 0;
-    for ($i; $i < $last_index; $i++)
-    {
-        if (is_int($input[$i]))
-        {
-            $sum = $input[$i] + $sum; 
-        }
-        else
-        {
-            return -1;
-            die();
-        }
-    }
-    return $sum;
+    return array_sum(array_slice($input, $i, $N));
 }
 
 echo getSumNK([1,3,4,5,8,9], 3, 2);
@@ -80,3 +60,18 @@ echo "\n";
 echo getSumNK([1,2,3,4,5,6], 0, 0);
 echo "\n";
 echo getSumNK([1,2,3,4,1.0,2], 3, 1);
+
+echo "\n";
+echo "Tests: \n";
+$input = [1,3,4,5,8,9];
+echo getSumNK($input, 3, 2).PHP_EOL; //12
+echo getSumNK($input, 0, 3).PHP_EOL; //30
+echo getSumNK($input, 1, 0).PHP_EOL; //1
+echo getSumNK($input, 1, 1).PHP_EOL; //1
+echo getSumNK($input, 6, 2).PHP_EOL; //-1
+echo getSumNK($input, -2, 2).PHP_EOL; //-1
+echo getSumNK($input, 3, -1).PHP_EOL; //-1
+$input = [1,3,4];
+echo getSumNK($input, 1, 3).PHP_EOL; //4
+$input = [-5=>1, 'cat'=>3, 2.0=>1];
+echo getSumNK($input, 0, 0).PHP_EOL; //5
