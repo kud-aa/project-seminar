@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-function wordsCount (string $sourceString)
+function wordsCount (string $sourceString) : ?array
 {
 
     $sourceString =  mb_strtolower(mb_convert_case($sourceString, MB_CASE_TITLE, "UTF-8"));
@@ -27,5 +27,5 @@ print_r(wordsCount("Раз Два Три Четыре Пять
 echo "\n";
 print_r(wordsCount("Кот кот кОт оЛень"));
 echo "\n";
-print_r(wordsCount("Первый, второй. Первый-второй. Третий1"));
+print_r(wordsCount("Первый, второй. Первый-второй. Третий1");
 ?>
