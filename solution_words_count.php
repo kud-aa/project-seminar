@@ -27,5 +27,5 @@ print_r(wordsCount("Раз Два Три Четыре Пять
 echo "\n";
 print_r(wordsCount("Кот кот кОт оЛень"));
 echo "\n";
-print_r(wordsCount("Первый, второй. Первый-второй. Третий1");
+print_r(wordsCount("Первый, второй. Первый-второй. Третий1"));
 ?>
