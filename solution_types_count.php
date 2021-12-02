@@ -1,5 +1,6 @@
 <?php
-function typesCounter (... $arguments) 
+
+function typesCounter (... $arguments) : ?array
 { 
     $bool_num = 0;
     $int_num = 0;
@@ -31,12 +32,12 @@ function typesCounter (... $arguments)
     return $array;
 }
 
-print_r(typesCounter('test', new StdClass, false));
-echo "\n";
-print_r(typesCounter(1, 3, 'test', 7, 'another string', 7.16, 1.2e3, 'hoho', 10, true));
-echo "\n";
-print_r(typesCounter("s", true, true));
-echo "\n";
-print_r(typesCounter('test', 1111, null));
-echo "\n";
+//print_r(typesCounter('test', new StdClass, false));
+//echo "\n";
+//print_r(typesCounter(1, 3, 'test', 7, 'another string', 7.16, 1.2e3, 'hoho', 10, true));
+//echo "\n";
+//print_r(typesCounter("s", true, true));
+//echo "\n";
+//print_r(typesCounter('test', 1111, null));
+//echo "\n";
 ?>
