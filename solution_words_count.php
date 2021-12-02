@@ -20,16 +20,19 @@ function wordsCount (string $sourceString) : ?array
     return $words_array;
 }
 
-print_r(wordsCount("НАтуральный   Блондин"));
-echo "\n";
-print_r(wordsCount("string`` -- string1 просто стороКа просто"));
-echo "\n";
-print_r(wordsCount("Раз Два Три Четыре Пять
-                    Скажем без подвоха
-                    Раз Два Три Четыре Пять
-                    Жадность - это плохо"));
-echo "\n";
-print_r(wordsCount("Кот кот кОт оЛень"));
-echo "\n";
-print_r(wordsCount("Первый, второй. Первый-второй. Третий1"));
+//print_r(wordsCount("НАтуральный   Блондин"));
+//echo "\n";
+//print_r(wordsCount("string`` -- string1 просто стороКа просто"));
+//echo "\n";
+//print_r(wordsCount("Раз Два Три Четыре Пять
+//                    Скажем без подвоха
+//                    Раз Два Три Четыре Пять
+//                    Жадность - это плохо"));
+//echo "\n";
+//print_r(wordsCount("Кот кот кОт оЛень"));
+//echo "\n";
+//print_r(wordsCount("Первый, второй. Первый-второй. Третий1"));
+//echo "\n";
+//print_r(wordsCount("___ natural beauTy"));
+
 ?>
