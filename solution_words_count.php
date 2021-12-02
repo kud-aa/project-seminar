@@ -36,4 +36,6 @@ function wordsCount (string $sourceString) : ?array
 //print_r(wordsCount("___ natural beauTy"));
 //echo "\n";
 //print_r(wordsCount("TestIng will cost 300- bUcks"));
+//echo "\n";
+//print_r(wordsCount("when the test is a little bit SUS ඞඞඞ"));
 ?>
