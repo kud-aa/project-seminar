@@ -1,30 +1,34 @@
 <?php
-
-function gettype_str ($value): string
-{
-    if (gettype($value) == 'double') return 'float';
-    return gettype($value);
-}
-
 function typesCounter (... $arguments) 
 { 
-    $array = array('boolean', 'integer', 'float', 'string', 'object', 'array');
-
-    $nums = array();
-    foreach ($array as $type)
-    {
-        $nums[$type] = 0;
-    }
+    $bool_num = 0;
+    $int_num = 0;
+    $float_num = 0;
+    $str_num = 0;
+    $obj_num = 0;
+    $arr_num = 0;
 
     foreach($arguments as $arg)
     {
-        $type= gettype_str ($arg);
-        if (array_key_exists($type, $nums))
-            $nums[$type] += 1;
-        else
-            return null;
+        $type= gettype($arg);
+        if ($type == "boolean") $bool_num++;
+        if ($type == 'integer') $int_num++;
+        if ($type ==  'double') $float_num++;
+        if ($type == 'string') $str_num++;
+        if ($type == 'object') $obj_num++;
+        if ($type == "array") $arr_num++;
     }
-    return $nums;
+
+    $array = array(
+        'boolean' => $bool_num ,
+        'integer' => $int_num,
+        'float' => $float_num,
+        'string' => $str_num,
+        'object' => $obj_num,
+        'array' => $arr_num
+    );
+
+    return $array;
 }
 
 print_r(typesCounter('test', new StdClass, false));
