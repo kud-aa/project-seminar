@@ -17,6 +17,8 @@ function wordsCount (string $sourceString) : ?array
     // The words are now separated by single spaces and can be splitted to an array
     $words_array = array_count_values(preg_split( "/[\n\r\t ]+/", $sourceString, 0, PREG_SPLIT_NO_EMPTY ));
 
+    ksort($words_array);
+
     return $words_array;
 }
 
