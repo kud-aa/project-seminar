@@ -12,12 +12,29 @@ function typesCounter (... $arguments) : ?array
     foreach($arguments as $arg)
     {
         $type= gettype($arg);
-        if ($type == "boolean") $bool_num++;
-        if ($type == 'integer') $int_num++;
-        if ($type ==  'double') $float_num++;
-        if ($type == 'string') $str_num++;
-        if ($type == 'object') $obj_num++;
-        if ($type == "array") $arr_num++;
+        switch($type)
+        {
+        case 'boolean':
+            $bool_num++;
+            break;
+        case 'integer':
+            $int_num++;
+            break;
+        case 'double':
+            $float_num++;
+            break;
+        case 'string':
+            $str_num++;
+            break;
+        case 'object':
+            $obj_num++;
+            break;
+        case 'array':
+            $arr_num++;
+            break;
+        default:
+            return null;
+            break;
     }
 
     $array = array(
