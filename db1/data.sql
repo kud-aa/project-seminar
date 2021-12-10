@@ -1,37 +1,3 @@
-INSERT INTO faculty(name) VALUES(rand() * 50);
-INSERT INTO faculty(name) SELECT name * rand() FROM faculty;
-
-INSERT INTO groups(name) VALUES(rand() * 420);
-INSERT IGNORE INTO groups(name) SELECT name * rand() FROM groups;
-
-INSERT INTO shelves(name) VALUES(rand() * 6969);
-INSERT INTO shelves(name) SELECT name * rand() FROM shelves;
-
-INSERT INTO books(title) VALUES(rand() * 123);
-INSERT INTO books(author) VALUES(rand() * 123);
-INSERT INTO books(title) SELECT name * rand() FROM books;
-
-INSERT INTO students(first_name) VALUES(rand() * 123);
-
-UPDATE `groups` SET `name` = 1000 * RAND() WHERE 1;
-UPDATE `groups` SET `name` = MIN + (MAX - MIN) * RAND() WHERE 1;
-
-DELIMITER $$
-CREATE PROCEDURE InsertRand(IN NumRows INT, IN MinVal INT, IN MaxVal INT)
-    BEGIN
-        DECLARE i INT;
-        SET i = 1;
-        START TRANSACTION;
-        WHILE i <= NumRows DO
-            INSERT INTO groups VALUES (MinVal + CEIL(RAND() * (MaxVal - MinVal)));
-            SET i = i + 1;
-        END WHILE;
-        COMMIT;
-    END$$
-DELIMITER ;
-
-CALL InsertRand(1111, 2222, 5555);
-
 INSERT INTO books (title, author) VALUES
     ( 'when the books is a little bit sus',     (SELECT id from shelves WHERE id='1') ),
     ( 'AMOGUS', (SELECT id from shelves WHERE id='1' ) );
