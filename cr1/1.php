@@ -7,11 +7,11 @@ $dbname = 'prof203';
 
 $db = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
 
-if($_SERVER['REQUEST_METHOD'] !== 'GET')
-    die("ERROR: Incorrect method should be GET");
-
-if(!array_key_exists('specialty_name', $_GET))
-    die("ERROR: Required arguments missing");
+//if($_SERVER['REQUEST_METHOD'] !== 'GET')
+//    die("ERROR: Incorrect method should be GET");
+//
+//if(!array_key_exists('specialty_name', $_GET))
+//    die("ERROR: Required arguments missing");
 
 try{
     $specialty_name = $_GET['specialty_name'];
@@ -39,6 +39,8 @@ EOD
         $res = $query->fetchAll();
         echo json_encode($res, JSON_UNESCAPED_UNICODE);
     }
+}catch (PDOException $e){
+        die('db error');
 }
 ?>
 
