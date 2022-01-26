@@ -22,7 +22,7 @@ try {
 
         $sql = <<<QUERY
                   SELECT 
-                  books.id, books.title, books.author, shelves.name
+                  books.id, books.title, books.author, shelves.shelve
                   FROM books
                   INNER JOIN shelves ON books.shelve_id = shelves.id;
               QUERY;

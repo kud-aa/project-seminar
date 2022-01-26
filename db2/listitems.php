@@ -1,7 +1,7 @@
 <?php
 
-//declare(strict_types=1);
-//ini_set('error_log', __DIR__ . '/error.log');
+declare(strict_types=1);
+ini_set('error_log', __DIR__ . '/error.log');
 
 function create_connection($hostname, $username, $password, $dbname): PDO
 {
@@ -16,30 +16,39 @@ function create_connection($hostname, $username, $password, $dbname): PDO
     }
 }
 
-//try {
-//    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-//    }
-//
-//    else{
-//        error_log("listitems: wrong request method");
-//        die(http_response_code(400));
-//    }
-//}
-//catch (PDOException $exception) {
-//    $dbh = null;
-//    error_log('listitems:'.$exception->getMessage());
-//    die(json_encode([]));
-//}
-$dbh = create_connection('localhost', 'user', 'pass', 'library');
+try {
+    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
-$sql = <<<QUERY
-    SELECT 
-    *
-    FROM students
-    INNER JOIN faculty ON students.faculty_id = faculty.id;
-    INNER JOIN groups ON students.group_id = groups.id;
-QUERY;
-$result = $dbh->query($sql)->fetchAll();
-print_r($result);
+        $dbh = create_connection('localhost', 'user', 'pass', 'library');
+
+        $sql = <<<QUERY
+                  SELECT 
+                        students.first_name,
+                        students.last_name,
+                        students.home_phone,
+                        groups.group_name,
+                        faculty.faculty_name
+                  FROM students
+                  INNER JOIN groups ON students.group_id = groups.id
+                  INNER JOIN faculty ON groups.faculty_id = faculty.id
+        QUERY;
+
+        $result = $dbh->query($sql);
+        $result->execute();
+        echo json_encode($result->fetchAll(PDO::FETCH_ASSOC));
+    }
+
+    else{
+        error_log("listitems: wrong request method");
+        die(http_response_code(400));
+    }
+    $dbh = null;
+    $result = null;
+}
+catch (PDOException $exception) {
+    $dbh = null;
+    error_log('listitems:'.$exception->getMessage());
+    die(json_encode([]));
+}
 ?>
 
