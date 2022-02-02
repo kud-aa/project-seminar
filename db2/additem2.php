@@ -1,7 +1,7 @@
 <?php
 
 //curl --request POST \
-//--url 'http://localhost:8006/additem2.php?title="testdn"&author="testdn"&shelve_id=201'
+//--url 'http://localhost:8006/additem2.php?title="testdn"&author="testdn"&shelve_id=200'
 
 declare(strict_types=1);
 ini_set('error_log', __DIR__ . '/error.log');
