@@ -1,5 +1,9 @@
 <?php
 
+//curl --request GET \
+//--url 'http://localhost:8008/1.php?speciality_name=%D0%98%D0%91'
+// ИБ = %D0%98%D0%91 encoded from utf-8
+
 $hostname = 'localhost';
 $username = 'user';
 $password = 'pass';
@@ -15,11 +19,6 @@ if(!array_key_exists('speciality_name', $_GET))
 
 try{
     $speciality_name = $_GET['speciality_name'];
-    $num = 1;
-    if(array_key_exists('speciality_name', $_GET))
-        $num = $_GET[$num];
-
-    $offset = ($num - 1) * 50;
 
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
 

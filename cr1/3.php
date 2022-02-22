@@ -1,5 +1,8 @@
 <?php
 
+//curl --request GET \
+//--url 'http://localhost:8008/3.php?pagenum=1'
+
 $hostname = 'localhost';
 $username = 'user';
 $password = 'pass';

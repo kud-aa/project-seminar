@@ -1,5 +1,8 @@
 <?php
 
+//curl --request GET \
+//--url 'http://localhost:8008/2.php?year_start=2019'
+
 $hostname = 'localhost';
 $username = 'user';
 $password = 'pass';
@@ -15,11 +18,6 @@ if(!array_key_exists('year_start', $_GET))
 
 try{
     $year_start = $_GET['year_start'];
-    $num = 1;
-    if(array_key_exists('year_start', $_GET))
-        $num = $_GET[$num];
-
-    $offset = ($num - 1) * 50;
 
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
 
