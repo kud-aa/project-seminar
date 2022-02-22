@@ -47,7 +47,7 @@ try {
     }
 
     else{
-        error_log("listitems: wrong request method");
+        error_log("getitem: wrong request method");
         die(http_response_code(400));
     }
     $dbh = null;
@@ -55,7 +55,7 @@ try {
 }
 catch (PDOException $exception) {
     $dbh = null;
-    error_log('listitems:'.$exception->getMessage());
+    error_log('getitem:'.$exception->getMessage());
     die(json_encode([]));
 }
 ?>
