@@ -30,6 +30,7 @@ try{
                 LEFT JOIN groups ON groups.grid = students.grid
                 LEFT JOIN specialities ON specialities.speciality_id = groups.speciality_id
             WHERE specialities.speciality_name LIKE :speciality_name
+            ORDER BY students.lastname
 EOD
         );
         $query->bindValue(':speciality_name', $speciality_name, PDO::PARAM_STR);

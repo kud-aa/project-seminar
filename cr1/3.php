@@ -16,31 +16,25 @@ if(!array_key_exists('pagenum', $_GET))
 try{
     $pagenum = $_GET['pagenum'];
     $limit = 50;
-    if(array_key_exists('pagenum', $_GET))
-        $limit = $_GET[$limit];
 
-    $offset = ($num - 1) * 50;
+    $limit_start = $limit * ($pagenum - 1);
 
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
 
-    if (!array_key_exists( 'year_start', $_GET)) {
         $query = $db->prepare(<<<EOD
             SELECT students.lastname, students.firstname, groups.grnum, specialities.speciality_name, groups.year_start
             FROM students
                 LEFT JOIN groups ON groups.grid = students.grid
                 LEFT JOIN specialities ON specialities.speciality_id = groups.speciality_id
-            WHERE specialities.speciality_name LIKE :speciality_name
+            ORDER BY students.lastname LIMIT :limit_start, :limit
 EOD
         );
-        $query->bindValue(':speciality_name', $speciality_name, PDO::PARAM_STR);
+        $query->bindValue(':limit_start', $limit_start, PDO::PARAM_INT);
+        $query->bindValue(':limit', $limit, PDO::PARAM_INT);
         $query->execute();
         $res = $query->fetchAll();
         echo json_encode($res, JSON_UNESCAPED_UNICODE);
-    }
 }catch (PDOException $e){
         die('db error');
 }
 ?>
-
-
-
