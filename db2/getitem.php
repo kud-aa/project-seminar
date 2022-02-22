@@ -20,19 +20,25 @@ try {
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $dbh = create_connection('localhost', 'user', 'pass', 'library');
-
-        $student_id = $_GET["student_id"];
-
+        
+        $id = $_GET["ID"];
         $sql = <<<QUERY
                   SELECT 
                         students.first_name,
                         students.last_name,
                         students.home_phone,
                         groups.group_name,
-                        faculty.faculty_name
-                  FROM students
-                  INNER JOIN groups ON students.group_id = groups.id
-                  INNER JOIN faculty ON groups.faculty_id = faculty.id
+                        faculty.faculty_name,
+                        books.title,
+                        books.author,
+                        shelves.shelve
+                  FROM students_owe_books
+                  LEFT JOIN students ON students_owe_books.student_id = students.id
+                  LEFT JOIN books ON students_owe_books.book_id = books.id
+                  LEFT JOIN groups ON students.group_id = groups.id
+                  LEFT JOIN faculty ON groups.faculty_id = faculty.id
+                  LEFT JOIN shelves ON books.shelve_id = shelves.id
+                  WHERE students_owe_books.id = $id
         QUERY;
 
         $result = $dbh->query($sql);
