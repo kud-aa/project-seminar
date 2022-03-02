@@ -1,7 +1,7 @@
 <?php
 
 //curl --request POST \
-//--url 'http://localhost:8006/additem2.php?title="testdn"&author="testdn"&shelve_id=200'
+//--url 'http://localhost:8006/additem2.php?title="testdn"&author="testdn"&release_date="27.03.50"&shelve_id=200'
 
 declare(strict_types=1);
 ini_set('error_log', __DIR__ . '/error.log');
@@ -25,8 +25,8 @@ try {
         $dbh = create_connection('localhost', 'user', 'pass', 'library');
 
         $sql = <<<QUERY
-                  INSERT INTO books (title, author, shelve_id)
-                  VALUES (:title, :author, :shelve_id)
+                  INSERT INTO books (title, author, release_date, shelve_id)
+                  VALUES (:title, :author, :release_date, :shelve_id)
         QUERY;
 
         $result = $dbh->prepare($sql);
@@ -34,6 +34,7 @@ try {
         $result->execute(array(
             ':title' => $_GET["title"],
             ':author' => $_GET["author"],
+            ':release_date' => $_GET["release_date"],
             ':shelve_id' => $_GET["shelve_id"]
         ));
 
@@ -49,6 +50,7 @@ catch (PDOException $exception) {
     $arr["status"] = "error";
     $arr["message"] = "Failed to add record";
     echo json_encode($arr);
+    error_log('additem2:'.$exception->getMessage());
     die();
 }
 ?>

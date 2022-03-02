@@ -1,5 +1,8 @@
 <?php
 
+//curl --request GET \
+//--url 'http://localhost:8006/getitem.php?ID=100'
+
 declare(strict_types=1);
 ini_set('error_log', __DIR__ . '/error.log');
 
@@ -31,6 +34,7 @@ try {
                         faculty.faculty_name,
                         books.title,
                         books.author,
+                        books.release_date,
                         shelves.shelve
                   FROM students_owe_books
                   LEFT JOIN students ON students_owe_books.student_id = students.id

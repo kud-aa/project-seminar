@@ -46,6 +46,7 @@ catch (PDOException $exception) {
     $arr["status"] = "error";
     $arr["message"] = "Failed to delete record";
     echo json_encode($arr);
+    error_log('deleteitem:'.$exception->getMessage());
     die();
 }
 ?>

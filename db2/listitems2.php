@@ -22,7 +22,7 @@ try {
 
         $sql = <<<QUERY
                   SELECT 
-                  books.id, books.title, books.author, shelves.shelve
+                  books.id, books.title, books.author, books.release_date, shelves.shelve
                   FROM books
                   INNER JOIN shelves ON books.shelve_id = shelves.id;
               QUERY;
@@ -41,7 +41,7 @@ try {
 
 catch (PDOException $exception) {
     $dbh = null;
-    error_log('listitems:'.$exception->getMessage());
+    error_log('listitems2:'.$exception->getMessage());
     die(json_encode([]));
 }
 ?>

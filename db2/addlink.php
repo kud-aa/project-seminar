@@ -47,6 +47,7 @@ catch (PDOException $exception) {
     $arr["status"] = "error";
     $arr["message"] = "Failed to add link";
     echo json_encode($arr);
+    error_log('addlink:'.$exception->getMessage());
     die();
 }
 ?>

@@ -55,6 +55,7 @@ catch (PDOException $exception) {
     $arr["status"] = "error";
     $arr["message"] = "Failed to add record";
     echo json_encode($arr);
+    error_log('edititem:'.$exception->getMessage());
     die();
 }
 ?>

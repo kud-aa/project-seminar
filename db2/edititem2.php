@@ -1,7 +1,7 @@
 <?php
 
 //curl --request POST \
-//--url 'http://localhost:8006/edititem2.php?title=PEPSI&author=OPENSTACK&shelve_id=200&ID=203'
+//--url 'http://localhost:8006/edititem2.php?title=PEPSI&author=OPENSTACK&release_date=2022&shelve_id=200&ID=203'
 
 declare(strict_types=1);
 ini_set('error_log', __DIR__ . '/error.log');
@@ -28,6 +28,7 @@ try {
                   UPDATE books SET
                   title=:title,
                   author=:author, 
+                  release_date=:release_date,
                   shelve_id=:shelve_id
                   WHERE id=:id
         QUERY;
@@ -37,6 +38,7 @@ try {
         $result->execute(array(
             ':title' => $_GET["title"],
             ':author' => $_GET["author"],
+            ':release_date' => $_GET["release_date"],
             ':shelve_id' => $_GET["shelve_id"],
             ':id' => $_GET["ID"]
         ));
@@ -52,6 +54,7 @@ catch (PDOException $exception) {
     $arr["status"] = "error";
     $arr["message"] = "Failed to add record";
     echo json_encode($arr);
+    error_log('edititem2:'.$exception->getMessage());
     die();
 }
 ?>
