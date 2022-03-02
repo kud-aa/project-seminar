@@ -480,7 +480,6 @@ VALUES
   (199,"eleifend. Cras",199),
   (200,"semper cursus.",200);
 
-
 INSERT INTO shelves(id, shelve) 
 VALUES
   (1,"17"),
@@ -963,246 +962,246 @@ VALUES
   ("Xantha","Arnold","1-518-573-9908",199,199),
   ("Darryl","Hinton","425-8556",200,200);
 
-INSERT INTO books(title, author, shelve_id)
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Euismod Urna Nullam Inc.","Tucker Duffy",1),
-  ("Duis Cursus Diam Consulting","Jesse Richards",2),
-  ("Quis Lectus PC","Melvin Rowe",3),
-  ("Proin Limited","Maxwell Myers",4),
-  ("Ut Dolor Dapibus LLC","Moses Langley",5),
-  ("Diam Ltd","Odette Watson",6),
-  ("Praesent Interdum LLC","Willow Gillespie",7),
-  ("Pede Incorporated","Prescott Dyer",8),
-  ("Est PC","Adena Tanner",9),
-  ("Sed Dictum Proin LLC","Dale Owens",10);
-INSERT INTO books(title, author, shelve_id)
+  ("blandit congue. In scelerisque","Salvador Smith","27.03.50",1),
+  ("velit egestas lacinia. Sed","Rowan Velazquez","09.12.17",2),
+  ("natoque penatibus et magnis","Hedda Gregory","11.03.44",3),
+  ("adipiscing lobortis risus. In","Maryam Rodriguez","28.02.76",4),
+  ("lacinia at, iaculis quis,","Brynn Waters","28.11.85",5),
+  ("luctus ut, pellentesque eget,","Leonard Conner","08.12.73",6),
+  ("ipsum. Phasellus vitae mauris","Desiree Silva","18.05.52",7),
+  ("vitae semper egestas, urna","Wendy Guerrero","05.02.69",8),
+  ("non, lacinia at, iaculis","Gregory Adams","23.04.71",9),
+  ("accumsan sed, facilisis vitae,","Talon Kirk","16.05.01",10);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Dui Suspendisse Ac Limited","September Craig",11),
-  ("Diam Ltd","Kerry Montgomery",12),
-  ("In Consectetuer PC","Tarik Walker",13),
-  ("Magna LLP","Zachery Mann",14),
-  ("Malesuada Ut Sem Company","Isaac Rosales",15),
-  ("Dictum Placerat Incorporated","Cameron Reeves",16),
-  ("At Fringilla Consulting","Genevieve Battle",17),
-  ("Vestibulum Lorem Associates","Jaime Mayo",18),
-  ("Enim Mauris Industries","Rowan Pate",19),
-  ("In Nec Orci Foundation","Peter Owen",20);
-INSERT INTO books(title, author, shelve_id)
+  ("ac mattis semper, dui","Sacha Wagner","04.10.81",11),
+  ("convallis erat, eget tincidunt","Britanni Mccarthy","05.11.70",12),
+  ("accumsan laoreet ipsum. Curabitur","Malachi Franks","05.03.42",13),
+  ("augue porttitor interdum. Sed","Tanya Guzman","18.04.72",14),
+  ("commodo hendrerit. Donec porttitor","Vielka Duran","16.05.18",15),
+  ("metus. Aenean sed pede","Kevyn Ward","31.08.08",16),
+  ("urna suscipit nonummy. Fusce","Chantale Anthony","12.01.04",17),
+  ("semper cursus. Integer mollis.","Jemima Irwin","28.09.18",18),
+  ("at risus. Nunc ac","Salvador Singleton","01.05.18",19),
+  ("erat. Etiam vestibulum massa","Katelyn Patterson","20.01.92",20);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Aliquam Adipiscing Incorporated","Xaviera Mccoy",21),
-  ("Mauris Incorporated","Gareth Caldwell",22),
-  ("Orci Consectetuer Euismod Limited","Nicole Riley",23),
-  ("Gravida Aliquam Tincidunt Incorporated","Martena Hinton",24),
-  ("Egestas Aliquam Nec Corporation","Jesse Calhoun",25),
-  ("Fusce Mollis Duis Incorporated","Elton Patel",26),
-  ("Egestas Fusce Corp.","Tatum Kim",27),
-  ("Blandit Nam Foundation","Celeste Smith",28),
-  ("Suspendisse Consulting","Arsenio Kinney",29),
-  ("Arcu Corp.","Mira Wyatt",30);
-INSERT INTO books(title, author, shelve_id)
+  ("penatibus et magnis dis","Silas Warren","14.06.11",21),
+  ("tempor bibendum. Donec felis","Thor Summers","20.03.46",22),
+  ("non quam. Pellentesque habitant","Ira Rasmussen","26.05.41",23),
+  ("nisl sem, consequat nec,","David Goff","27.10.78",24),
+  ("Nulla dignissim. Maecenas ornare","Clare Rosa","11.02.95",25),
+  ("rhoncus id, mollis nec,","Jerome Ashley","06.07.46",26),
+  ("congue, elit sed consequat","Lillian Serrano","01.02.49",27),
+  ("eu tellus eu augue","Kalia Baird","20.11.05",28),
+  ("interdum. Sed auctor odio","David Walker","20.01.17",29),
+  ("natoque penatibus et magnis","Plato Cox","11.10.48",30);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Mi Tempor Inc.","Guinevere Lynch",31),
-  ("Dis Parturient LLC","Steel Marquez",32),
-  ("Libero PC","Raya Beck",33),
-  ("Hendrerit Consectetuer Cursus Inc.","Paul Aguilar",34),
-  ("Egestas Hendrerit Corporation","Drew Dyer",35),
-  ("Tempor Industries","Bert Owen",36),
-  ("Eu Institute","Merrill Moses",37),
-  ("Lectus Institute","Rowan Manning",38),
-  ("Donec Est Corp.","Deacon Morgan",39),
-  ("Aenean Eget Industries","Clinton Best",40);
-INSERT INTO books(title, author, shelve_id)
+  ("malesuada vel, convallis in,","Brooke Everett","12.03.63",31),
+  ("vitae nibh. Donec est","Timothy Cervantes","29.07.45",32),
+  ("Nam tempor diam dictum","Brenna Holcomb","06.04.48",33),
+  ("nibh. Phasellus nulla. Integer","Berk Chavez","27.07.01",34),
+  ("Nullam suscipit, est ac","Lavinia Watson","13.08.49",35),
+  ("vehicula risus. Nulla eget","Libby Webster","01.08.45",36),
+  ("sodales at, velit. Pellentesque","Elliott Peck","04.04.65",37),
+  ("at lacus. Quisque purus","Ferdinand Bolton","08.10.05",38),
+  ("Nunc ut erat. Sed","Marah Pollard","24.08.05",39),
+  ("non massa non ante","Carson Mcfadden","11.04.22",40);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Malesuada Id Corp.","Nola Malone",41),
-  ("Ante Lectus Industries","Ira Jordan",42),
-  ("Placerat Eget Consulting","Wendy Brown",43),
-  ("Urna Nec Corp.","Tyrone Church",44),
-  ("Egestas Urna Incorporated","Erich Koch",45),
-  ("Neque Sed Industries","Lunea Sanchez",46),
-  ("In Corp.","Dacey Estes",47),
-  ("Eget Ipsum Corporation","Mari Melendez",48),
-  ("Egestas Blandit Nam LLP","Clarke Lewis",49),
-  ("Sit Amet Foundation","Indira Barber",50);
-INSERT INTO books(title, author, shelve_id)
+  ("eget odio. Aliquam vulputate","Sharon Pugh","20.12.47",41),
+  ("sit amet metus. Aliquam","Sheila Strickland","11.08.62",42),
+  ("enim commodo hendrerit. Donec","Sharon Wagner","23.07.81",43),
+  ("sociis natoque penatibus et","Gemma Sharpe","20.09.79",44),
+  ("eu odio tristique pharetra.","Hedy Reeves","28.12.19",45),
+  ("nec tempus mauris erat","Yoshio Coleman","25.07.53",46),
+  ("molestie orci tincidunt adipiscing.","Xyla Butler","28.03.86",47),
+  ("facilisis non, bibendum sed,","Oren Suarez","02.02.81",48),
+  ("convallis, ante lectus convallis","Harper Lang","23.07.19",49),
+  ("velit justo nec ante.","Dolan Ramsey","04.03.50",50);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Aliquam Ornare Incorporated","Cassady Rowe",51),
-  ("Magnis Dis PC","Inga Mcfadden",52),
-  ("Sed Et Libero Foundation","Harlan Hull",53),
-  ("Sodales Elit Erat LLP","Ray Morgan",54),
-  ("Donec Tempus PC","Tanner Lewis",55),
-  ("Eu Incorporated","Ruth King",56),
-  ("Turpis Non Inc.","Erasmus Castillo",57),
-  ("Montes PC","Katell Savage",58),
-  ("Neque Vitae Semper Associates","Oliver Pierce",59),
-  ("Nulla Semper Industries","Nyssa Morrow",60);
-INSERT INTO books(title, author, shelve_id)
+  ("magna. Cras convallis convallis","Frances King","19.05.60",51),
+  ("vel sapien imperdiet ornare.","Ross Burks","15.08.97",52),
+  ("orci. Donec nibh. Quisque","Joy Mcfadden","17.06.66",53),
+  ("mauris. Integer sem elit,","Bevis Bartlett","14.02.02",54),
+  ("nunc ac mattis ornare,","Dana Booker","12.01.83",55),
+  ("convallis est, vitae sodales","Halla Bentley","30.03.83",56),
+  ("risus odio, auctor vitae,","Carter Guerrero","18.12.79",57),
+  ("lectus pede, ultrices a,","Meredith Lara","15.01.72",58),
+  ("rhoncus. Proin nisl sem,","Reed Snow","24.03.13",59),
+  ("urna. Nunc quis arcu","Jermaine Bradshaw","02.10.86",60);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Lacus Limited","Nora Sharp",61),
-  ("Quisque Purus Ltd","Ocean Albert",62),
-  ("Curae Phasellus LLP","Penelope Cain",63),
-  ("Ultrices A Auctor Associates","Deanna Donovan",64),
-  ("Eget Ipsum Suspendisse PC","Roanna Mccray",65),
-  ("Lectus Pede Ultrices Consulting","Neville Dixon",66),
-  ("Viverra Foundation","McKenzie Mcleod",67),
-  ("Nullam Ut LLP","Basia Moreno",68),
-  ("Dolor Quisque Foundation","Chester Roach",69),
-  ("Iaculis Aliquet Foundation","Logan Rios",70);
-INSERT INTO books(title, author, shelve_id)
+  ("Nunc mauris. Morbi non","Addison Harrell","26.12.69",61),
+  ("vehicula aliquet libero. Integer","Donovan Shaw","24.02.92",62),
+  ("quam quis diam. Pellentesque","Petra Shepherd","26.12.43",63),
+  ("purus mauris a nunc.","Aspen Adkins","25.06.54",64),
+  ("vitae, orci. Phasellus dapibus","Byron Ward","19.01.91",65),
+  ("sit amet, consectetuer adipiscing","Kylan Goff","03.07.14",66),
+  ("ipsum leo elementum sem,","Clark Edwards","15.08.75",67),
+  ("dui quis accumsan convallis,","Claudia Wilkinson","01.04.91",68),
+  ("primis in faucibus orci","Aiko Shannon","26.11.46",69),
+  ("cursus purus. Nullam scelerisque","Oren Luna","05.07.63",70);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Augue Corporation","Mechelle Casey",71),
-  ("Vestibulum Ante Ipsum Incorporated","Julian Bauer",72),
-  ("Eget Mollis Lectus Company","Velma Pruitt",73),
-  ("Sed Molestie Sed Inc.","Irene Hodge",74),
-  ("Nibh Dolor PC","Dale Decker",75),
-  ("Vel Incorporated","Cassandra Mullins",76),
-  ("Faucibus Morbi Vehicula Corporation","Moses Cole",77),
-  ("Magna Industries","Anthony Blake",78),
-  ("Quis Pede LLP","Irma Aguirre",79),
-  ("Molestie In Company","Sybill Campos",80);
-INSERT INTO books(title, author, shelve_id)
+  ("Duis a mi fringilla","Keefe Keith","03.05.11",71),
+  ("vulputate, lacus. Cras interdum.","Nissim Zimmerman","26.09.75",72),
+  ("Quisque varius. Nam porttitor","Charlotte Branch","21.01.60",73),
+  ("Phasellus libero mauris, aliquam","Wyoming Black","16.01.23",74),
+  ("fermentum vel, mauris. Integer","Edan Allen","15.09.03",75),
+  ("ullamcorper. Duis at lacus.","Gail Porter","23.06.66",76),
+  ("odio tristique pharetra. Quisque","Andrew Bowen","22.06.43",77),
+  ("hymenaeos. Mauris ut quam","Ashely Martinez","13.07.74",78),
+  ("Proin eget odio. Aliquam","Catherine Horton","22.03.42",79),
+  ("adipiscing elit. Aliquam auctor,","Paul Mullins","29.07.76",80);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Fringilla Ltd","Hayes Flowers",81),
-  ("Amet Consectetuer Consulting","Sasha Merrill",82),
-  ("Vestibulum Neque PC","Joel Eaton",83),
-  ("Nunc Commodo Industries","Leo Dunn",84),
-  ("Lorem Luctus PC","Gil Good",85),
-  ("Mus Proin Vel Industries","Tanek James",86),
-  ("Mi Aliquam Gravida Inc.","Gisela Walker",87),
-  ("Semper Rutrum Industries","Raven Holden",88),
-  ("Nisl Elementum Purus Limited","Vivian Parsons",89),
-  ("Ac Mattis Consulting","George Whitney",90);
-INSERT INTO books(title, author, shelve_id)
+  ("a feugiat tellus lorem","Judah Dillard","04.09.64",81),
+  ("Duis a mi fringilla","Lareina Maynard","11.12.05",82),
+  ("lorem, luctus ut, pellentesque","Prescott Coffey","20.02.05",83),
+  ("dolor sit amet, consectetuer","Simon Goodman","02.06.47",84),
+  ("congue a, aliquet vel,","Travis Sosa","14.11.89",85),
+  ("nascetur ridiculus mus. Proin","Kasper Castaneda","12.06.09",86),
+  ("Sed diam lorem, auctor","Lara Palmer","24.03.92",87),
+  ("tellus id nunc interdum","Ayanna Rocha","08.09.05",88),
+  ("dapibus ligula. Aliquam erat","Fitzgerald Bennett","18.07.44",89),
+  ("dictum eu, placerat eget,","Rina Conner","13.01.44",90);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Quam Vel Sapien Associates","Nerea Fischer",91),
-  ("Auctor Non Feugiat PC","Emery Finley",92),
-  ("Varius Orci In LLC","Jada Thornton",93),
-  ("Et LLC","Driscoll Howell",94),
-  ("Sapien Aenean Limited","Mollie Fuentes",95),
-  ("Nunc Id Inc.","Ila Hart",96),
-  ("Vitae Purus Gravida Consulting","Lucian Mosley",97),
-  ("Metus Ltd","Cameron Nash",98),
-  ("Tristique Pharetra Quisque Inc.","Sharon Mooney",99),
-  ("Sed Hendrerit Corp.","Patricia Workman",100);
-INSERT INTO books(title, author, shelve_id)
+  ("a, arcu. Sed et","William Carver","27.01.81",91),
+  ("adipiscing non, luctus sit","Reuben Baker","18.05.41",92),
+  ("est. Nunc ullamcorper, velit","Brody Anthony","01.06.21",93),
+  ("malesuada augue ut lacus.","Karina Jackson","25.01.57",94),
+  ("eu augue porttitor interdum.","Amber Garrison","03.12.15",95),
+  ("Nunc mauris sapien, cursus","Charlotte Romero","24.03.72",96),
+  ("eu nulla at sem","Lara Hunt","14.04.60",97),
+  ("non, vestibulum nec, euismod","Serina Osborne","07.11.75",98),
+  ("Ut sagittis lobortis mauris.","Emerald Hull","02.08.19",99),
+  ("nec tellus. Nunc lectus","April Hines","10.03.96",100);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Non Foundation","Aquila Knowles",101),
-  ("Cras Eu Ltd","Nigel Chase",102),
-  ("Vel Sapien Corporation","Amber Bartlett",103),
-  ("Magna A Tortor Ltd","Pandora Morin",104),
-  ("Iaculis Lacus Associates","Cade Levy",105),
-  ("Nunc Lectus Industries","Rooney Mcfarland",106),
-  ("Mi Industries","Hasad Tran",107),
-  ("Facilisis Vitae Industries","Meredith Monroe",108),
-  ("Lorem Eget LLP","Marvin Stewart",109),
-  ("Augue Eu LLC","Nathan Olsen",110);
-INSERT INTO books(title, author, shelve_id)
+  ("nisl. Quisque fringilla euismod","Tatum Harris","13.09.80",101),
+  ("cubilia Curae Phasellus ornare.","Forrest Morin","30.07.69",102),
+  ("vitae erat vel pede","Dane Harper","03.02.86",103),
+  ("fermentum vel, mauris. Integer","Lunea Koch","12.03.41",104),
+  ("felis. Donec tempor, est","Orlando Reeves","09.03.64",105),
+  ("nisl. Maecenas malesuada fringilla","Germane Lowe","08.07.87",106),
+  ("mollis dui, in sodales","Mechelle Washington","19.05.06",107),
+  ("et magnis dis parturient","Dean Erickson","11.04.65",108),
+  ("est. Nunc ullamcorper, velit","Mariko Hunter","26.06.90",109),
+  ("ac urna. Ut tincidunt","Kaseem Gonzalez","05.06.04",110);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Magna Et Industries","Xantha Glass",111),
-  ("Nullam Ltd","Dylan Ellison",112),
-  ("Lacus Mauris Non Inc.","Walter Brock",113),
-  ("Suspendisse Tristique Neque Corp.","Keaton Thornton",114),
-  ("Fringilla Industries","Felix Velez",115),
-  ("Lacus Vestibulum Lorem Associates","Blake Christian",116),
-  ("Eget Company","Faith Mcintyre",117),
-  ("Ullamcorper Duis Limited","Allegra Hardy",118),
-  ("Consequat Dolor Industries","Raphael Buchanan",119),
-  ("Tincidunt Adipiscing Corporation","Rachel Alston",120);
-INSERT INTO books(title, author, shelve_id)
+  ("Sed pharetra, felis eget","Warren Salinas","21.08.51",111),
+  ("dolor. Fusce mi lorem,","Chava Murphy","24.03.70",112),
+  ("Nunc pulvinar arcu et","Macey Spencer","13.11.87",113),
+  ("Duis volutpat nunc sit","Brent Kinney","15.01.42",114),
+  ("consectetuer rhoncus. Nullam velit","Phoebe Solis","13.05.88",115),
+  ("eu arcu. Morbi sit","Kadeem Quinn","19.08.53",116),
+  ("aliquet vel, vulputate eu,","Aidan Rasmussen","04.02.18",117),
+  ("dolor. Quisque tincidunt pede","Noah Lewis","06.01.68",118),
+  ("ac orci. Ut semper","Mollie Cox","07.08.95",119),
+  ("orci, adipiscing non, luctus","Kasimir Park","13.07.82",120);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Nulla Eget Metus Corporation","Igor Gill",121),
-  ("Est Ac Consulting","Macy Stephens",122),
-  ("Et Incorporated","Emerson Sawyer",123),
-  ("Vel Limited","Leo Mcleod",124),
-  ("Sapien Gravida Corporation","Gannon Larsen",125),
-  ("Eu Sem Company","Burke Brady",126),
-  ("Aliquam Eu Accumsan Institute","Walter Osborn",127),
-  ("Cras Lorem Lorem LLC","Ezekiel Crawford",128),
-  ("Sed Pede Ltd","Julian Key",129),
-  ("Et Magnis Dis Incorporated","Kieran Sears",130);
-INSERT INTO books(title, author, shelve_id)
+  ("Sed pharetra, felis eget","Thane Gregory","01.07.49",121),
+  ("Proin ultrices. Duis volutpat","Yael Joseph","29.10.77",122),
+  ("magnis dis parturient montes,","Blythe Cunningham","11.02.07",123),
+  ("ut, sem. Nulla interdum.","Zeus Saunders","21.05.18",124),
+  ("Aliquam rutrum lorem ac","Dustin Cervantes","29.04.15",125),
+  ("Nullam nisl. Maecenas malesuada","Kirestin Gay","16.06.19",126),
+  ("neque tellus, imperdiet non,","Maya Hebert","24.03.98",127),
+  ("Pellentesque ut ipsum ac","Cairo Buck","07.12.52",128),
+  ("tincidunt dui augue eu","Rana Kelley","22.10.79",129),
+  ("ante blandit viverra. Donec","Denise Mckenzie","05.12.73",130);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Ante Dictum Incorporated","Kai Rollins",131),
-  ("Interdum Limited","Chadwick Wynn",132),
-  ("Vulputate Ullamcorper Foundation","Evelyn Prince",133),
-  ("A Scelerisque Inc.","Jocelyn Everett",134),
-  ("Nec Malesuada Ut Associates","Orson York",135),
-  ("Neque Morbi PC","Georgia Mcbride",136),
-  ("Suspendisse Dui Fusce Limited","MacKensie Barlow",137),
-  ("Nibh Enim Foundation","Jaquelyn Bowers",138),
-  ("Luctus Lobortis Foundation","Deanna Sosa",139),
-  ("Ut Sem Corporation","Herrod Richardson",140);
-INSERT INTO books(title, author, shelve_id)
+  ("molestie dapibus ligula. Aliquam","Wade Fuller","19.01.46",131),
+  ("ultricies sem magna nec","Amy Wallace","02.09.90",132),
+  ("sed, hendrerit a, arcu.","Vincent Torres","22.08.49",133),
+  ("dictum. Proin eget odio.","Alisa Robinson","31.07.50",134),
+  ("metus. Aenean sed pede","Patricia Le","10.07.92",135),
+  ("vitae aliquam eros turpis","Lacey Mcbride","26.06.95",136),
+  ("mauris. Morbi non sapien","Cameron Sharpe","12.07.60",137),
+  ("a, arcu. Sed et","Otto Moss","02.01.03",138),
+  ("porttitor interdum. Sed auctor","Omar Curtis","12.11.02",139),
+  ("pede sagittis augue, eu","Norman Banks","07.06.14",140);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Turpis Foundation","Joshua Rose",141),
-  ("Rutrum Urna Nec Incorporated","Castor Palmer",142),
-  ("Sodales Nisi Consulting","Noelani Fry",143),
-  ("Lorem Vehicula Et Ltd","Ursula Lester",144),
-  ("Quis Tristique LLC","Solomon Gregory",145),
-  ("Lobortis Ultrices Vivamus Inc.","Brian Carroll",146),
-  ("Sociis Natoque Ltd","Tatum Mcclain",147),
-  ("Sed Eu Foundation","Keelie Wyatt",148),
-  ("Curae Donec Tincidunt Associates","Hasad Richardson",149),
-  ("Ornare Egestas LLC","Piper Solomon",150);
-INSERT INTO books(title, author, shelve_id)
+  ("tellus. Phasellus elit pede,","Nomlanga Ruiz","19.08.63",141),
+  ("non leo. Vivamus nibh","Quynn Welch","27.05.58",142),
+  ("pharetra, felis eget varius","Kenyon Greene","23.09.61",143),
+  ("vulputate eu, odio. Phasellus","Lacy Bass","17.05.43",144),
+  ("facilisis facilisis, magna tellus","Maris Briggs","22.10.69",145),
+  ("neque sed dictum eleifend,","Chanda Dodson","07.05.10",146),
+  ("accumsan convallis, ante lectus","Zephr Small","30.11.97",147),
+  ("non enim. Mauris quis","Bryar Solis","15.09.16",148),
+  ("Cras vulputate velit eu","Paula Mclaughlin","21.09.62",149),
+  ("tincidunt. Donec vitae erat","Jerry Wheeler","09.02.03",150);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Aenean Eget Industries","Abra Alston",151),
-  ("Parturient LLC","Barry Knight",152),
-  ("Arcu Limited","Penelope Chambers",153),
-  ("Metus In Nec Incorporated","Patience Mathis",154),
-  ("Nibh Vulputate Consulting","Conan Baxter",155),
-  ("Mus Proin Foundation","Calvin Faulkner",156),
-  ("Lectus Cum Incorporated","Ian Davis",157),
-  ("Vestibulum Ante Ipsum Limited","Barclay Simpson",158),
-  ("Ipsum Primis In Corp.","Lana Snider",159),
-  ("Vivamus Nibh Ltd","Aileen Charles",160);
-INSERT INTO books(title, author, shelve_id)
+  ("aliquam adipiscing lacus. Ut","Yvonne Henderson","13.05.55",151),
+  ("Duis sit amet diam","Brett Pate","04.04.97",152),
+  ("purus sapien, gravida non,","Reese Salazar","07.11.77",153),
+  ("pharetra. Quisque ac libero","Ulysses Robinson","29.03.91",154),
+  ("imperdiet ornare. In faucibus.","Jin Ortiz","02.11.51",155),
+  ("vehicula. Pellentesque tincidunt tempus","Kane Hudson","10.01.19",156),
+  ("amet ornare lectus justo","Warren Miranda","03.05.66",157),
+  ("primis in faucibus orci","MacKenzie Bray","22.02.20",158),
+  ("nec, eleifend non, dapibus","Wade Frank","05.10.17",159),
+  ("magna et ipsum cursus","Ina Greene","02.11.80",160);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Nisi Nibh Limited","Caesar Stevens",161),
-  ("Nonummy Ac Feugiat LLC","Dominic Fulton",162),
-  ("Arcu Morbi Incorporated","Kiayada Mcconnell",163),
-  ("Purus Ac Tellus LLC","Oliver Lee",164),
-  ("Morbi Institute","Luke Steele",165),
-  ("Nec Cursus A LLP","Zephania Shannon",166),
-  ("Mauris Eu Elit Ltd","Whilemina Golden",167),
-  ("Sem Vitae Industries","Raymond Jackson",168),
-  ("Sit Amet Inc.","Brenda Houston",169),
-  ("Dictum Augue Malesuada Limited","Myra Wilkinson",170);
-INSERT INTO books(title, author, shelve_id)
+  ("malesuada id, erat. Etiam","Elizabeth Shepherd","26.07.16",161),
+  ("velit. Quisque varius. Nam","Tatiana Bauer","14.01.90",162),
+  ("fringilla mi lacinia mattis.","Bruce Peterson","15.06.21",163),
+  ("molestie tortor nibh sit","Owen Wiley","31.12.69",164),
+  ("Curabitur vel lectus. Cum","Ryder Hall","21.06.82",165),
+  ("et, lacinia vitae, sodales","Noelani Kemp","17.09.17",166),
+  ("sodales purus, in molestie","Emily Franco","12.07.53",167),
+  ("et, rutrum eu, ultrices","Kennan Knowles","11.10.88",168),
+  ("facilisis lorem tristique aliquet.","Hammett Underwood","30.09.76",169),
+  ("fringilla est. Mauris eu","Ferris Mcconnell","11.11.93",170);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Tempus Inc.","Len Potter",171),
-  ("Mauris Eu Limited","Allegra Tanner",172),
-  ("Cursus Associates","Jameson Murphy",173),
-  ("Eu Dolor Egestas LLP","Hanae Stevens",174),
-  ("Turpis Egestas LLC","India Savage",175),
-  ("Ac Tellus PC","Ebony Parker",176),
-  ("A Nunc Corp.","Penelope Marquez",177),
-  ("Sagittis Lobortis Corp.","Erin Gallagher",178),
-  ("Metus Eu Institute","Caldwell Petty",179),
-  ("Senectus Et Institute","Rooney Stanton",180);
-INSERT INTO books(title, author, shelve_id)
+  ("Cras lorem lorem, luctus","Burke Wolf","13.10.07",171),
+  ("non, egestas a, dui.","Maggie Ward","20.08.89",172),
+  ("eu tellus eu augue","Alfonso Howard","18.01.68",173),
+  ("per conubia nostra, per","Oliver Christensen","29.03.54",174),
+  ("Aliquam erat volutpat. Nulla","Lacota Larson","27.08.62",175),
+  ("vulputate mauris sagittis placerat.","Joan Garrison","03.03.45",176),
+  ("nibh dolor, nonummy ac,","Remedios Wilder","28.11.19",177),
+  ("neque non quam. Pellentesque","Tatyana Mayer","29.09.55",178),
+  ("Duis cursus, diam at","Caryn Ball","26.03.22",179),
+  ("scelerisque neque. Nullam nisl.","Nolan Combs","09.04.19",180);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Ultrices Iaculis Odio Institute","Steven Gilmore",181),
-  ("Turpis Nulla Corp.","Xanthus Norman",182),
-  ("Sed Nulla Ante Institute","Finn Pittman",183),
-  ("Suspendisse LLP","Phillip Hudson",184),
-  ("Nam Consequat Industries","Madeson Campbell",185),
-  ("A Felis Ullamcorper Foundation","Ezekiel Boyd",186),
-  ("Non Lobortis Limited","Buffy Walton",187),
-  ("Ipsum Dolor Sit PC","Cameron Rush",188),
-  ("Molestie Orci Tincidunt Company","Eagan Casey",189),
-  ("Pellentesque Habitant Company","Rhonda Chan",190);
-INSERT INTO books(title, author, shelve_id)
+  ("nisi dictum augue malesuada","Akeem Burch","05.11.66",181),
+  ("lorem vitae odio sagittis","Susan Salazar","18.10.86",182),
+  ("nec enim. Nunc ut","Solomon Wallace","13.04.44",183),
+  ("molestie arcu. Sed eu","Ursula Ashley","19.08.66",184),
+  ("senectus et netus et","Samson Maxwell","24.01.19",185),
+  ("Quisque nonummy ipsum non","Hanae Barton","28.06.78",186),
+  ("Nam ligula elit, pretium","Zena Park","17.06.77",187),
+  ("erat. Sed nunc est,","Jacob Dawson","07.04.41",188),
+  ("ante lectus convallis est,","Nichole Cardenas","09.12.17",189),
+  ("ut cursus luctus, ipsum","Irene Goodman","12.10.06",190);
+INSERT INTO books(title, author, release_date, shelve_id)
 VALUES
-  ("Non Egestas Corporation","Risa Cooper",191),
-  ("Quis Pede Corp.","Naida Fernandez",192),
-  ("Ut PC","Susan Olson",193),
-  ("Eget Mollis LLC","Bertha Carson",194),
-  ("Phasellus Fermentum Industries","Oprah Cochran",195),
-  ("Auctor Associates","Jacqueline Bowman",196),
-  ("Nunc PC","Kenneth Tanner",197),
-  ("Nam Ac Ltd","Gannon Levine",198),
-  ("Cubilia Curae Institute","Echo Sheppard",199),
-  ("Dapibus Ligula Aliquam Institute","Cally Murray",200);
+  ("mus. Proin vel nisl.","Ishmael Hurley","03.08.52",191),
+  ("quis urna. Nunc quis","Oprah Pitts","18.04.72",192),
+  ("malesuada ut, sem. Nulla","Jayme Barrett","17.05.11",193),
+  ("ante. Maecenas mi felis,","Sean Sweet","13.09.94",194),
+  ("sem egestas blandit. Nam","Venus Bennett","08.12.41",195),
+  ("Nunc quis arcu vel","Donna Ramirez","10.01.06",196),
+  ("ultrices a, auctor non,","Jane Gates","06.04.06",197),
+  ("amet nulla. Donec non","Jael Mcleod","28.01.65",198),
+  ("arcu et pede. Nunc","Zephania Whitney","23.04.66",199),
+  ("nostra, per inceptos hymenaeos.","Denton Rush","12.11.53",200);
 
 INSERT INTO students_owe_books(student_id, book_id)
 VALUES
