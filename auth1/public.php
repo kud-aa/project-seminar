@@ -18,14 +18,9 @@ function create_connection($hostname, $username, $password, $dbname): PDO
     }
 }
 
-// private
-function private_res()
+// public
+function public_res()
 {   
-    if ($_SERVER['REQUEST_METHOD'] != 'GET') {
-        my_log("Error: expected POST, not " . $_SERVER['REQUEST_METHOD']);
-        return http_response_code(405);
-    }
-
     session_name('authcookie');
     session_set_cookie_params(
         [
@@ -43,14 +38,14 @@ function private_res()
 
     session_start();
 
-    if (! isset($_SESSION['is_auth'])) {
-        my_log("Access error: attempt of unauthorised access");
-        echo "<h1>Forbidden</h1>";
-        return http_response_code(403);
+    if ($_SERVER['REQUEST_METHOD'] != 'GET') {
+        my_log("Error: expected POST, not " . $_SERVER['REQUEST_METHOD']);
+        return http_response_code(405);
     }
-
-    echo "<h1>Successful prviate request</h1>";
+    
+    echo "<h1>Successful public request</h1>";
     return http_response_code(200);
 }
 
-private_res();
+public_res($dbh);
+$dbh = null;

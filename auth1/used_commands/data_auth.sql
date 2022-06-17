@@ -1443,3 +1443,8 @@ VALUES
   (198,198),
   (199,199),
   (200,200);
+
+INSERT INTO users(id, username, hash_pass)
+VALUES
+  (1,"root","$2y$10$w4Lb.FTBJLyUKiwkWFn5Y.EhCGn6h3fDon86iT.usTdnIhZnyWpQa"),
+  (2,"user","$2y$10$7Pbw0Sw1rcet5/0TfsMHm.cJE9UBWgE1yBGeKxOFt.YrV1tcg/Sx.");
